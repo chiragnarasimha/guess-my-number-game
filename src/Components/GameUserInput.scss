@@ -1,0 +1,43 @@
+@import "../AppVariables.scss";
+
+.game-user-input {
+  display: flex;
+  flex-direction: column;
+  font-family: inherit;
+  gap: 3rem;
+  justify-content: center;
+  height: 100%;
+
+  &__input {
+    background-color: inherit;
+    text-decoration: none;
+    height: 10rem;
+    border-color: $color-grey-light-2;
+    border-style: solid;
+    border-width: 0.5rem;
+    color: $color-grey-light-2;
+    font-size: 3rem;
+    text-align: center;
+
+    font-family: inherit;
+    &:focus {
+      outline: none;
+    }
+
+    padding: 2rem;
+
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+
+  &__button {
+    font-family: inherit;
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+    width: 22rem;
+  }
+}

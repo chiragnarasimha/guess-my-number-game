@@ -29,6 +29,10 @@ body {
   width: 100%;
   height: 100vh;
 
+  // If the app container is flex, then we can define how much each of the attributed should grow vertically
+  display: flex;
+  flex-direction: column;
+
   padding: 5rem;
   &__container {
     &::-webkit-scrollbar {

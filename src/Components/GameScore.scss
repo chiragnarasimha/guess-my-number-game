@@ -1,0 +1,17 @@
+@import "../AppVariables.scss";
+
+.game-score {
+  height: 100%;
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25rem;
+  align-items: center;
+  &__section1 {
+    font-size: 3rem;
+  }
+  &__section2 {
+    font-size: 2.5rem;
+  }
+}
