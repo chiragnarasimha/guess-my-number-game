@@ -1,11 +1,20 @@
 import "./GameUserInput.scss";
 
-import React from "react";
+import React, { useContext, useRef } from "react";
+import GuessContext from "../Storage/guess-context";
 
-const GameUserInput = (props) => {
+const GameUserInput = () => {
+  const guessContext = useContext(GuessContext);
+  const inputRef = useRef();
+  const submitHandler = (event) => {
+    event.preventDefault();
+    // Store the input value as a integer
+    guessContext.setPreviousGuess(+inputRef.current.value);
+  };
   return (
-    <form className="game-user-input">
+    <form className="game-user-input" onSubmit={submitHandler}>
       <input
+        ref={inputRef}
         type="number"
         className="game-user-input__input"
         min={1}

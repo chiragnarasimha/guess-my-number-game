@@ -4,7 +4,7 @@ import React from "react";
 import GameUserInput from "./GameUserInput";
 import GameScore from "./GameScore";
 
-const Game = (props) => {
+const Game = () => {
   return (
     <div className="game">
       <div className="game__columns">
